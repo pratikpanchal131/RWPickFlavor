@@ -10,6 +10,10 @@
 		A94CE91F1E7FDE880079D31C /* RWPickFlavor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94CE9151E7FDE880079D31C /* RWPickFlavor.framework */; };
 		A94CE9241E7FDE880079D31C /* RWPickFlavorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94CE9231E7FDE880079D31C /* RWPickFlavorTests.swift */; };
 		A94CE9261E7FDE880079D31C /* RWPickFlavor.h in Headers */ = {isa = PBXBuildFile; fileRef = A94CE9181E7FDE880079D31C /* RWPickFlavor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A94CE96B1E7FE4350079D31C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94CE9691E7FE4340079D31C /* ViewController.swift */; };
+		A94CE96C1E7FE4350079D31C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94CE96A1E7FE4340079D31C /* Main.storyboard */; settings = {ASSET_TAGS = (New, ); }; };
+		A94CE96E1E7FE5460079D31C /* Assest.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94CE96D1E7FE5460079D31C /* Assest.xcassets */; };
+		A94CE9701E7FE5D20079D31C /* background.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A94CE96F1E7FE5D20079D31C /* background.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		A94CE91E1E7FDE880079D31C /* RWPickFlavorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RWPickFlavorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94CE9231E7FDE880079D31C /* RWPickFlavorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWPickFlavorTests.swift; sourceTree = "<group>"; };
 		A94CE9251E7FDE880079D31C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94CE9691E7FE4340079D31C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A94CE96A1E7FE4340079D31C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A94CE96D1E7FE5460079D31C /* Assest.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assest.xcassets; sourceTree = "<group>"; };
+		A94CE96F1E7FE5D20079D31C /* background.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +79,12 @@
 		A94CE9171E7FDE880079D31C /* RWPickFlavor */ = {
 			isa = PBXGroup;
 			children = (
+				A94CE96F1E7FE5D20079D31C /* background.jpeg */,
+				A94CE9691E7FE4340079D31C /* ViewController.swift */,
+				A94CE96A1E7FE4340079D31C /* Main.storyboard */,
 				A94CE9181E7FDE880079D31C /* RWPickFlavor.h */,
 				A94CE9191E7FDE880079D31C /* Info.plist */,
+				A94CE96D1E7FE5460079D31C /* Assest.xcassets */,
 			);
 			path = RWPickFlavor;
 			sourceTree = "<group>";
@@ -142,6 +154,9 @@
 		A94CE90C1E7FDE880079D31C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = pratik;
@@ -149,6 +164,7 @@
 					A94CE9141E7FDE880079D31C = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = NSX254PG58;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					A94CE91D1E7FDE880079D31C = {
@@ -181,6 +197,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94CE96E1E7FE5460079D31C /* Assest.xcassets in Resources */,
+				A94CE9701E7FE5D20079D31C /* background.jpeg in Resources */,
+				A94CE96C1E7FE4350079D31C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94CE96B1E7FE4350079D31C /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +342,7 @@
 		A94CE92A1E7FDE880079D31C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NSX254PG58;
@@ -334,6 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pratik.RWPickFlavor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +363,7 @@
 		A94CE92B1E7FDE880079D31C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = NSX254PG58;
@@ -360,6 +383,7 @@
 		A94CE92D1E7FDE880079D31C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = NSX254PG58;
 				INFOPLIST_FILE = RWPickFlavorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +396,7 @@
 		A94CE92E1E7FDE880079D31C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = NSX254PG58;
 				INFOPLIST_FILE = RWPickFlavorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
